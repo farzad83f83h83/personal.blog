@@ -43,7 +43,7 @@
     }
 
      /*========== reset =============*/
-    ,
+    
     ::before,
     ::after {
       margin: 0;
@@ -88,7 +88,7 @@
       width: 16px;
    } 
    ::-webkit-scrollbar-thumb {
-      background: var(--accent);
+      background: orange;
       border-radius: 20px;
       border: 4px solid;
    }
@@ -148,7 +148,7 @@
         transition: all 0.2s; 
     }
     .btn-primary {
-      background: var(--accent);
+      background: orange;
       color: var(--white);
       padding: 0.6rem 1.2rem; 
     }
@@ -163,8 +163,8 @@
       border: 3px solid var(--foreground-tertary);
     }
     .btn-secondary:hover {
-      color: var(--accent);
-      border-color: var(--accent);
+      color: orange;
+      border-color: orange;
     }
      /*========== Extra style for theme =============*/
      .dark-theme .btn-primary:hover {
@@ -209,7 +209,7 @@
         color: var(--foreground-primaey);
      }
      .logo span {
-        color: var(--accent);
+        color: orange;
      }
      header .btn-group {
         display: flex;
@@ -231,7 +231,7 @@
         transition: all 0.2s ease-in;
      }
      :is(.theme-btn-mobile, .nav-menu-btn, .nav-close-btn):hover {
-        background: var(--accent);
+        background: orange;
         color: var(--white);
      }
      .theme-btn-mobile ion-icon {
@@ -280,7 +280,7 @@
         transition:all 0.2s;
     }
     .mobile-nav .nav-link:hover {
-        color: var(--accent);
+        color: orange;
     }
 
     /*========== header dection =============*/
@@ -296,7 +296,7 @@
        line-height: 1.6;
     }
     .hero b {
-      color: var(--accent);
+      color: orange;
       font-weight: inherit;
     }
     .hero .h3 {
@@ -381,7 +381,7 @@
       color: var(--foreground-secondary);
    }
    .blog .h4:hover {
-      color: var(--accent);
+      color: orange;
    }
    .blog .text-sm {
       display: flex;
