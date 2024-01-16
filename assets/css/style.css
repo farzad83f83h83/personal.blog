@@ -1,4 +1,4 @@
-  /*========== variables css=============*/
+  /*========== variabclassListles css=============*/
   .light-theme {
     /*========== light theme colors =============*/
     --background-primary: hsl(0, 0%, 100%);
@@ -11,7 +11,7 @@
     --foreground-secondar: hsl(216, 12%, 47%);
     --foreground-tertary: hsl(214 ,22%, 70%);
   
-    --accent: hsl(229, 94%, 42%);
+    --accent: hsl(22, 100%, 50%);
     }
   
     .dark-theme {
@@ -26,7 +26,7 @@
       --foreground-secondar: hsl(211, 25%, 84%);
       --foreground-tertary: hsl(214, 20%, 69%);
     
-      --accent: hsl(229, 94%, 42%);
+      --accent: hsl(22, 100%, 50%);
     } 
     :root {
          /*========== colors =============*/
@@ -43,9 +43,9 @@
     }
 
      /*========== reset =============*/
-    
-    ::before,
-    ::after {
+    *,
+    *::before,
+    *::after {
       margin: 0;
       padding: 0;
       box-sizing: borber-box;
@@ -88,7 +88,7 @@
       width: 16px;
    } 
    ::-webkit-scrollbar-thumb {
-      background: orange;
+      background: var(--accent);
       border-radius: 20px;
       border: 4px solid;
    }
@@ -148,8 +148,8 @@
         transition: all 0.2s; 
     }
     .btn-primary {
-      background: orange;
-      color: var(--white);
+      background: var(--accent);
+      color: var(--background-primary);
       padding: 0.6rem 1.2rem; 
     }
     .btn-primary:hover {
@@ -163,8 +163,8 @@
       border: 3px solid var(--foreground-tertary);
     }
     .btn-secondary:hover {
-      color: orange;
-      border-color: orange;
+      color: var(--accent);
+      border-color: var(--accent);
     }
      /*========== Extra style for theme =============*/
      .dark-theme .btn-primary:hover {
@@ -209,7 +209,7 @@
         color: var(--foreground-primaey);
      }
      .logo span {
-        color: orange;
+        color: var(--accent);
      }
      header .btn-group {
         display: flex;
@@ -231,8 +231,8 @@
         transition: all 0.2s ease-in;
      }
      :is(.theme-btn-mobile, .nav-menu-btn, .nav-close-btn):hover {
-        background: orange;
-        color: var(--white);
+        background: var(--accent);
+        color: var(--background-primary);
      }
      .theme-btn-mobile ion-icon {
         display: none;
@@ -280,7 +280,7 @@
         transition:all 0.2s;
     }
     .mobile-nav .nav-link:hover {
-        color: orange;
+        color: var(--accent);
     }
 
     /*========== header dection =============*/
@@ -296,7 +296,7 @@
        line-height: 1.6;
     }
     .hero b {
-      color: orange;
+      color: var(--accent);
       font-weight: inherit;
     }
     .hero .h3 {
@@ -381,7 +381,7 @@
       color: var(--foreground-secondary);
    }
    .blog .h4:hover {
-      color: orange;
+      color: var(--accent);
    }
    .blog .text-sm {
       display: flex;
@@ -401,8 +401,8 @@
    }
    
     .load-more {
-      background: orange;
-      color: white;
+      background: var(--accent);
+      color: var(--background-primary);
       margin: auto;
       padding: 0.6rem 1.2rem;
       transition: all 0.2s;
@@ -417,11 +417,12 @@
   }
 
    /*========== footer =============*/
+   
    footer {
       background: var(--background-primary);
    }
    footer .container {
-      padding: var(py) 15px;
+      padding: var(--py) 15px;
       display:grid ;
       grid-template-columns: 1fr;
       gap: 30px;
@@ -437,24 +438,24 @@
    .footer-title {
       color: var(--foreground-primaey);
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
    }
    .footer-link {
       color: var(--foreground-secondary);
    }
 
    .footer-link:hover {
-      color: orange;
+      color: var(--accent);
    }
    .copyright {
       color: var(--foreground-secondary);
       font-size: var(--fs-4);
       text-align: center;
       padding: 1rem;
-      border-top: 1px solid var(--action-primaey);
+      border-top: 2px solid var(--accent);
    }
    .copyright a {
-      color: orange;
+      color: var(--accent);
       font-weight: 500;
    }
    .copyright a:hover {
